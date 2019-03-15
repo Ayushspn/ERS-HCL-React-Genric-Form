@@ -1,25 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Aside from "./components/aside/aside";
 class App extends Component {
+  state = {
+    list1: [
+      {
+        id: 1,
+        technology: "HTML"
+      },
+      {
+        id: 2,
+        technology: "HTML"
+      },
+      {
+        id: 3,
+        technology: "HTML"
+      },
+      {
+        id: 4,
+        technology: "HTML"
+      }
+    ]
+  };
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Aside list1={this.state.list1} align={"left"} />
+        <Aside list1={this.state.list1} align={"right"} />
       </div>
     );
   }

@@ -1,0 +1,22 @@
+ul {
+  list-style-type: none;
+  width: 388px;
+  margin: 10px;
+  background: blanchedalmond;
+  padding: 0;
+  /* position: absolute; */
+  /* left: -388px;
+  transition: 2s; */
+}
+/* ul:hover {
+  left: 0;
+} */
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid red;
+}
+ul li:hover {
+  padding: 10px;
+  border-bottom: 1px solid red;
+  background-color: #2196f3;
+}
